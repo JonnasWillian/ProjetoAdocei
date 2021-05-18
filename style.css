@@ -1,0 +1,169 @@
+/* Importações mais simples do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Atributos Globais
+
+#FEFEFE (branco)
+
+#E4BBB7 (Rosa fraco)
+
+#C7817F (rosa vermelho)
+
+#10BEC9 (azulão)
+
+*/
+*{ 
+    margin: 8px auto;
+    padding: 0px;
+    box-sizing: border-box;
+   /* font-family: 'Roboto', sans-serif; */
+   font-size: 15px;
+    text-align: center;
+}
+
+body{
+    background-color: #E4BBB7;
+}
+
+/* MENU DA LANDPAGE */
+#menu-h ul{
+    list-style-type: none;
+    background-color: #10BEC9;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 10%;
+    font-size: 15px;
+    opacity: 70%;
+}
+
+#menu-h ul li{
+    display: inline;
+}
+
+#menu-h ul li a{
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .6s;
+    height: 15%;
+}
+
+#menu-h ul li a:hover{
+    background-color: #E4BBB7 ;
+    height: 15%;
+    opacity: 0%;
+}
+
+/* Home - Carrosel */
+
+#Home{
+    background: #E4BBB7 ;
+    width: 900px;
+    height: 300px;
+    outline: 3px solid black;
+    overflow: hidden;
+
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+}
+
+#Home ul{
+    display:  flex;
+    list-style: none;
+    width: 900px;
+    height: 250px;
+    text-align: unset;
+    background-color: #E4BBB7;
+    padding: 0;
+}
+
+#Home li{
+    position: relative;
+    left: -900px;
+    animation: slide 15s infinite ease-out;
+}
+
+#Home ul li img {
+    width: 900px;
+    height: 250px;
+}
+
+/* Produtos */
+
+#Produtos{
+    background: #2980b9;
+}
+
+#Home ul li{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
+}
+
+/*Quem Somos*/
+
+#Quem_Somos{
+    background: #d35400;
+}
+
+/* Contato */
+
+#Contato{
+    background: #7f8c8d;
+}
+
+#Contato button {
+
+    width: 400px;
+    height: 250px;
+    list-style-type: none;
+    padding: 0;
+   outline: 3xpx;
+    background: #2c3e50;
+    animation: ini infinite 3s;
+
+    color: black;
+
+}
+
+@keyframes slide{
+
+    0%{
+        left: 0px;
+    }
+
+    20%{
+        left: 0px;
+    }
+    
+
+    30%{
+       left: -900px;
+    }
+
+    50%{
+        left: -900px;
+    }
+
+    60%{
+        left: -1800px;
+    }
+
+    90%{
+        left: -1800px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
+
+/* Responsividade */
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+}
