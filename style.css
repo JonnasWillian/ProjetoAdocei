@@ -53,18 +53,17 @@ body{
 #menu-h ul li a:hover{
     background-color: #E4BBB7 ;
     height: 15%;
-    opacity: 0%;
+    opacity: 50%;
 }
 
 /* Home - Carrosel */
 
 #Home{
     background: #E4BBB7 ;
-    width: 900px;
+    width: 875px;
     height: 300px;
     outline: 3px solid black;
     overflow: hidden;
-
     margin: 50px auto;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
 }
@@ -72,30 +71,12 @@ body{
 #Home ul{
     display:  flex;
     list-style: none;
-    width: 900px;
+    width: 1000px;
     height: 250px;
     text-align: unset;
     background-color: #E4BBB7;
     padding: 0;
 }
-
-#Home li{
-    position: relative;
-    left: -900px;
-    animation: slide 15s infinite ease-out;
-}
-
-#Home ul li img {
-    width: 900px;
-    height: 250px;
-}
-
-/* Produtos */
-
-#Produtos{
-    background: #2980b9;
-}
-
 #Home ul li{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
@@ -103,11 +84,114 @@ body{
     margin: 16px 40px 0;
 }
 
-/*Quem Somos*/
-
-#Quem_Somos{
-    background: #d35400;
+#Home li{
+    padding: 0px;
+    position: relative;
+    left: -800px;
+    animation: slide 15s infinite ease-out;
 }
+
+#Home ul li img {
+    width: 800px;
+    height: 250px;
+}
+
+/*Sobre*/
+
+#Sobre{
+    background: #FEFEFE ;
+    
+}
+
+#Sobre h1{
+    font-size: 600%;
+}
+
+#Sobre h2 {
+    font-size: 150%;
+}
+
+/* Produtos */
+
+#Produtos{
+    background: #a6d427 ;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#Produtos h1{
+    font-size: 600%;
+}
+
+#Produtos .conteudo{
+    width: 30%;
+    background: black;
+    border-radius: 20px;
+    margin: 5px;
+    float: left;
+    margin-top: 8%;
+    text-align: center;
+}
+
+#Produtos .conteudo h1{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#Produtos .conteudo a{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#Produtos .conteudo a:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: rgb(163, 50, 50);
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#Produtos .preço{
+    width: 120px;
+    height: 150px;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+
+#Produtos .preço h2 {
+    font-size: 40px;
+    color: white;
+}
+
+#Produtos .detalhes {
+    margin: -50px;
+}
+
+#Produtos .detalhes h4{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    line-height: 1;
+}
+
 
 /* Contato */
 
@@ -115,20 +199,8 @@ body{
     background: #7f8c8d;
 }
 
-#Contato button {
 
-    width: 400px;
-    height: 250px;
-    list-style-type: none;
-    padding: 0;
-   outline: 3xpx;
-    background: #2c3e50;
-    animation: ini infinite 3s;
-
-    color: black;
-
-}
-
+/* Animação Do Carrosel */
 @keyframes slide{
 
     0%{
@@ -141,19 +213,19 @@ body{
     
 
     30%{
-       left: -900px;
+       left: -1000px;
     }
 
     50%{
-        left: -900px;
+        left: -1000px;
     }
 
     60%{
-        left: -1800px;
+        left: -2000px;
     }
 
     90%{
-        left: -1800px;
+        left: -2000px;
     }
 
     100%{
