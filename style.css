@@ -108,7 +108,7 @@ body{
 }
 
 #Sobre h2 {
-    font-size: 150%;
+    font-size: 160%;
 }
 
 /* Produtos */
@@ -125,7 +125,7 @@ body{
 }
 
 #Produtos h1{
-    font-size: 600%;
+    font-size: 400%;
 }
 
 #Produtos .conteudo{
@@ -139,7 +139,7 @@ body{
 }
 
 #Produtos .conteudo h1{
-    font-size: 20px;
+    font-size: 100%;
     color: white;
     text-transform: uppercase;
 }
@@ -150,10 +150,12 @@ body{
     border: 2px solid white;
     color: white;
     padding: 10px 60px;
-    display: inline-block;
-    margin: 10% auto;
+    display: inline-table;
+    margin: 5% auto;
     text-transform: uppercase;
     font-weight: bold;
+    width: 30%;
+    height: 10px;
 }
 
 #Produtos .conteudo a:hover{
@@ -162,34 +164,37 @@ body{
     border: 2px solid black;
     color: rgb(163, 50, 50);
     padding: 10px 60px;
-    display: inline-block;
-    margin: 10% auto;
+    display: inline-table;
+    margin: 5% auto;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #Produtos .preço{
-    width: 120px;
-    height: 150px;
+    width: 100px;
+    height: 60px;
     margin: 5% auto 0 auto;
     text-align: center;
 }
 
 #Produtos .preço h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
+    
 }
 
 #Produtos .detalhes {
-    margin: -50px;
+    margin: -30px;
 }
 
 #Produtos .detalhes h4{
-    font-size: 15px;
+    font-size: 80%;
     font-weight: normal;
     text-align: center;
     color: white;
     line-height: 1;
+    padding-bottom: 15px;
+    padding-top: 50px;
 }
 
 
@@ -199,6 +204,30 @@ body{
     background: #7f8c8d;
 }
 
+#Contato .footer{
+    height: 150px;
+}
+
+#Contato .footer h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+}
+
+#Contato .footer p{
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: unset;
+    color: white;
+    margin-top: 20px;
+}
+
+#Contato .logo-rede{
+    margin-top: 20px;
+}
 
 /* Animação Do Carrosel */
 @keyframes slide{
@@ -234,8 +263,9 @@ body{
 }
 
 /* Responsividade */
-@media (min-width: 800px) {
-    html {
+@media screen and (min-width: 750px) {
+    body, #menu-h {
         font-size: 87.5%;
-    }
+        width:100%; 
+    }   
 }
