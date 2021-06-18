@@ -13,8 +13,8 @@
 /* Atalho de cores */
 
 :root {
-  --blu: #2e7ce4;
-  --grenn: #bcd144;
+  --blu: #0EBFC7;
+  --grenn: #E4BBB7;
   --gray: #ededed;
 }
 
@@ -224,6 +224,11 @@ section .card-item {
   background: #dedede;
   color: var(--grenn);
 }
+
+.card-item button a{
+  text-decoration: none;
+}
+
 
 /* Sobre */
 
